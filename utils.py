@@ -86,7 +86,21 @@ if __name__ == '__main__':
     img_hat_matrix = F @ img.ravel()
     print(img_hat)
     print(img_hat_matrix)
-    
+    im_M = np.imag(M)
+    re_M = np.real(M)
+    print (M)
+    A = np.concatenate((re_M, im_M), axis = 0)
+    print (A)
+
+
+    # Générer les parties réelles et imaginaires
+    real_part = np.random.random(3)
+    imag_part = np.random.random(3)
+
+    # Combinez-les pour créer un vecteur complexe
+    complex_vector = (real_part.imag_part)
+
+    print(complex_vector)
     
     
     
